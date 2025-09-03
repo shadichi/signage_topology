@@ -56,7 +56,6 @@ flowchart LR
   TV2[Another TV] --> API
   TV2 --> CDN
   TV2 <-->|Sync Actions| MQTT
-
   ```
 
 
