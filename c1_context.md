@@ -38,6 +38,12 @@
 
 ---
 
+```mermaid
+flowchart LR
+  A-->B
+```
+
+
 ## ارتباطات سیستم
 
 ```mermaid
@@ -55,7 +61,6 @@ flowchart LR
 
   TV2[Another TV] --> API
   TV2 --> CDN
-  TV2 <-->|Sync Actions| MQTT
-  ```
+  TV2 <-->|Sync Actions| MQTT```
 
 
