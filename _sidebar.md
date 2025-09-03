@@ -1,30 +1,26 @@
 - [🏠 صفحه اصلی](home.md)
 
-- **مرور کلی**
-  - [معرفی پروژه](intro.md)
-  - [معماری کلی](architecture.md)
-  - [دیپلوی و سناریو](deployment.md)
-  - [وابستگی سرویس‌ها](services.md)
+- **C4 Views**
+  - [C1 — System Context](c1_context.md)
+  - [C2 — Containers / Services](c2_container.md)
+  - [C3 — Components (Playback)](c3_feature_playback.md)
 
-- **طراحی API و تنظیمات**
+- **Design & Ops**
+  - [Deployment / Topology](deployment.md)
   - [API Gateway / Routing](api-gateway.md)
-  - [کانفیگ‌ها (.env و ...)](configs.md)
+  - [Configs ](configs.md)
 
-- **امنیت و لاگینگ**
-  - [احراز هویت / مجوزها (SSO, JWT, ...)](auth.md)
-  - [سیاست لاگینگ](logging.md)
+- **Security & Observability**
+  - [Auth / SSO / Authorization](auth.md)
+  - [Logging Policy](logging.md)
 
-- **چرخه ساخت و انتشار**
-  - [Build Manual](build.md)
-  - [Release Manual](release.md)
+- **Lifecycle**
+  - [Build & Release Manual](build_manual_and_build_release.md)
 
-- **اینترفیس‌ها و پروتکل‌ها**
-  - [SBus Reference](bus.md)
-  - [MQTT یا HTTPS Agreements](protocols.md)
-
-- **دیتابیس و دیاگرام‌ها**
-  - [ER Diagram (با توضیحات)](er-diagram.md)
+- **Interfaces & Data**
+  - [MQTT / HTTPS Agreements](mqtt_https.md)
+  - [ER Diagram (+comments)](erd.md)
   - [Data Flow Diagram](dfd.md)
 
-- **تست‌ها**
-  - [Test Plan & Suggestions](test-plan.md)
+- **Quality**
+  - [Tests Plan & Suggestions](test_plan.md)
