@@ -12,7 +12,7 @@
 ### Base URL
 https://aparatchi.yektahoosh.com/api/v1
 
-### هدرهای استاندارد
+### هدرها
 - `Accept: application/json`
 - `Content-Type: application/json` (برای درخواست‌های معمولی)
 - `Content-Type: multipart/form-data` (برای آپلود فایل)
@@ -20,7 +20,6 @@ https://aparatchi.yektahoosh.com/api/v1
 ### Endpoints 
 - **POST /tvscreen/capture**  
   - هدف: ارسال اسکرین‌شات  
-  - هدرها: `Accept`, `Authorization`  
   - بادی: `multipart/form-data` شامل:  
     - `screenshot` (png)  
     - `requestID`  

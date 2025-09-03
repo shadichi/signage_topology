@@ -1,11 +1,11 @@
 # Deployment — Digital Signage
 
-## 🎯 هدف
+## هدف
 این بخش نحوه‌ی استقرار (Deployment) سیستم Digital Signage را توضیح می‌دهد  
 
 ---
 
-## 🏗️ محیط‌ها (Environments)
+## محیط‌ها (Environments)
 1. **Development (Dev)**  
    - در عمل اپ رو روی سیستم خودمان یا مستقیم روی تلویزیون Build و Run می‌کنیم.
 (هیچ سرور جدا یا محیط مجزا وجود ندارد.) 

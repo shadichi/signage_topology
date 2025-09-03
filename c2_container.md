@@ -5,8 +5,6 @@
 
 ---
 
-## لایه‌ها و وابستگی‌ها (High-level)
-> جهت فلش یعنی «وابستگی». UI به State وابسته است، State به Domain، Domain به Data، و Data به منابع Remote/Local.
 
 ## 🔗 Services Dependency Diagram
 

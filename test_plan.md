@@ -59,20 +59,6 @@ flutter test test/usecases/load_schedule_test.dart
 
 ---
 
-## نمونه ساختار پوشه تست
-test/
-usecases/
-load_schedule_test.dart
-compute_t0_test.dart
-repos/
-assets_repo_test.dart
-widgets/
-home_screen_test.dart
-integration/
-happy_path_test.dart
-
----
-
 ## اسکلت نمونه (Unit) — UseCase زمان
 ```dart
 import 'package:flutter_test/flutter_test.dart';

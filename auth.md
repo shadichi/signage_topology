@@ -1,26 +1,26 @@
 # Authentication / Authorization — Digital Signage
 
 ## هدف
-این داکیومنت توضیح می‌دهد چه کسی چطور احراز هویت می‌شود (AuthN) و چه چیزی اجازه دارد انجام دهد (AuthZ). تمرکز ما روی دو هویت است: **ادمین پنل** و **دستگاه TV**.
+این داکیومنت توضیح می‌دهد چه کسی چطور احراز هویت می‌شود و چه چیزی اجازه دارد انجام دهد. تمرکز ما روی دو هویت است: **ادمین پنل** و **دستگاه TV**.
 
 ---
 
-## هویت‌ها (Identities)
+## هویت‌ها
 - **Admin (Panel User):** ورود به پنل مدیریت، تعریف TV و اختصاص Action Group.
 - **Device (TV App):** اپ Flutter نصب‌شده روی تلویزیون. یک «کد/سریال دستگاه» دارد و روی MQTT مشترک می‌شود.
 
 ---
 
-## سناریو A — ثبت و آماده‌سازی دستگاه (Provisioning)
+## سناریو A — ثبت و آماده‌سازی دستگاه 
 1) **نمایش سریال در TV:**  
    اپ پس از نصب، یک `TV_CODE` نمایش می‌دهد.
 
 2) **ثبت در پنل توسط ادمین:**  
-   ادمین وارد پنل شده، TV جدید را با `TV_CODE` اضافه می‌کند و برای آن یک **Action Group** تعریف/اختصاص می‌دهد.
+   ادمین وارد پنل شده، TV جدید را با `TV_CODE` اضافه می‌کند و برای آن یک **Action Group** اختصاص می‌دهد.
 
 3) **تنظیمات MQTT:**  
-   - اپ با `MQTT_USER` و `MQTT_PASS` به Broker وصل می‌شود (Basic Auth).  
-   - اپ روی تاپیک‌های مخصوص همان دستگاه مشترک می‌شود:  
+   - اپ با `Password` و `Usernam` به Broker وصل می‌شود (Basic Auth).  
+   - اپ روی تاپیک‌های مخصوص همان دستگاه سابسکرایب میکند:  
      - `yektahoosh/ds/<TV_CODE>/actiongroup`  
      - `yektahoosh/ds/<TV_CODE>/splash`  
      - `yektahoosh/ds/<TV_CODE>/sync`  
@@ -29,14 +29,13 @@
      - (سراسری) `yektahoosh/ds/getlockstate`
 
 4) **اعتبارسنجی سمت سرور:**  
-   سرور/بک‌اند فقط به دستگاه‌هایی اجازه مصرف می‌دهد که `TV_CODE` آنها در پنل ثبت شده باشد.
+   سرور فقط به دستگاه‌هایی اجازه مصرف می‌دهد که `TV_CODE` آنها در پنل ثبت شده باشد.
 
 ---
 
 
 ## سناریو C — ورود ادمین به پنل
-- **Panel Login:**  
-  - SSO  
+- **Panel Login:**   
   - مجوزها: فقط نقش‌های ادمین می‌توانند TV جدید ثبت کنند و Action Group بدهند.
 
 ---
@@ -49,9 +48,9 @@
 
 ---
 
-## دنباله‌ی نمونه‌ها (Sequence)
+## دیاگرام
 
-### 1) Provisioning (ثبت دستگاه)
+### 1) ثبت دستگاه
 ```mermaid
 sequenceDiagram
   participant TV as TV App
@@ -60,11 +59,11 @@ sequenceDiagram
   participant API as Backend API
 
   TV->>TV: show DEVICE_CODE
-  Panel->>API: POST /v1/devices (DEVICE_CODE)
-  API-->>Panel: 201 created
+  Panel->>API: POST / (DEVICE_CODE)
+  API-->>Panel: created
 
   TV->>MQTT: CONNECT (Basic Auth)
-  MQTT-->>TV: CONNACK success
+  MQTT-->>TV: success
 
   Panel->>API: assign ActionGroup to DEVICE_CODE
   API-->>MQTT: publish actiongroup message to topic of DEVICE_CODE
