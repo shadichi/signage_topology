@@ -74,5 +74,5 @@ sequenceDiagram
 
   TV->>CDN: GET video files by URL
   CDN-->>TV: 200 video content
-
+```
 

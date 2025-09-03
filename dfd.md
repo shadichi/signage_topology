@@ -41,3 +41,4 @@ flowchart LR
   HandleMqtt <-->|subscribe topics| Broker
   Capture -->|POST tvscreen capture multipart| API
   Report -->|POST playback report| API
+```

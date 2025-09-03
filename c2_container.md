@@ -30,3 +30,4 @@ flowchart TB
   RMT --> API[(Backend API)]
   RMT --> MQTT[(MQTT Broker)]
   LOC --> FILES[(Video Files Cache)]
+```

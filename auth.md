@@ -69,3 +69,4 @@ sequenceDiagram
   Panel->>API: assign ActionGroup to DEVICE_CODE
   API-->>MQTT: publish actiongroup message to topic of DEVICE_CODE
   MQTT-->>TV: actiongroup message
+```
