@@ -51,21 +51,4 @@
 ## دیاگرام
 
 ### 1) ثبت دستگاه
-```mermaid
-sequenceDiagram
-  participant TV as TV App
-  participant Panel as Admin Panel
-  participant MQTT as MQTT Broker
-  participant API as Backend API
-
-  TV->>TV: show DEVICE_CODE
-  Panel->>API: POST / (DEVICE_CODE)
-  API-->>Panel: created
-
-  TV->>MQTT: CONNECT (Basic Auth)
-  MQTT-->>TV: success
-
-  Panel->>API: assign ActionGroup to DEVICE_CODE
-  API-->>MQTT: publish actiongroup message to topic of DEVICE_CODE
-  MQTT-->>TV: actiongroup message
-```
+![ثبت دستگاه](images/Device_registration.png)

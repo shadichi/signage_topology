@@ -43,35 +43,4 @@
 ---
 
 ## Routing Design
-```mermaid
-sequenceDiagram
-  participant TV as TV App
-  participant API as Backend API
-  participant MQTT as MQTT Broker
-  participant CDN as CDN
-
-  TV->>API: POST /api/v1/tvscreen/capture (multipart/form-data)
-  API-->>TV: 200 Upload OK / JSON Response
-
-  TV->>MQTT: SUBSCRIBE yektahoosh/ds/TV-Code/actiongroup (Basic Auth)
-  MQTT-->>TV: ActionGroup message
-
-  TV->>MQTT: SUBSCRIBE yektahoosh/ds/TV-Code/splash
-  MQTT-->>TV: Show Splash command
-
-  TV->>MQTT: SUBSCRIBE yektahoosh/ds/TV-Code/sync
-  MQTT-->>TV: Sync request
-
-  TV->>MQTT: SUBSCRIBE yektahoosh/ds/TV-Code/changelockstate
-  MQTT-->>TV: LockState change
-
-  TV->>MQTT: SUBSCRIBE yektahoosh/ds/getlockstate
-  MQTT-->>TV: Current lock state
-
-  TV->>MQTT: SUBSCRIBE yektahoosh/ds/TV-Code/capture
-  MQTT-->>TV: Trigger screenshot capture
-
-  TV->>CDN: GET video files by URL
-  CDN-->>TV: 200 video content
-```
-
+![Routing Design](images/Routing_Design.png)

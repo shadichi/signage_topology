@@ -38,29 +38,9 @@
 
 ---
 
-```mermaid
-flowchart LR
-  A-->B
-```
-
 
 ## ارتباطات سیستم
 
-```mermaid
-flowchart LR
-  Admin[Admin] -->|مدیریت| Panel[Admin Panel]
-  Panel -->|HTTPS| API[(Backend API)]
-  API --> Auth[(Auth / Token)]
-  API --> CDN[(CDN / Storage)]
-  API --> MQTT[(MQTT Broker)]
-  API --> Time[(Server Time)]
-
-  TV1[Flutter TV App] -->|Schedule & Actions| API
-  TV1 -->|Download Videos| CDN
-  TV1 <-->|Real-time Updates| MQTT
-
-  TV2[Another TV] --> API
-  TV2 --> CDN
-  TV2 <-->|Sync Actions| MQTT```
+![ارتباطات سیستم](images/System_communication.png)
 
 

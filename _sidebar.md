@@ -7,7 +7,7 @@
 
 - **Design & Ops**
   - [Deployment](deployment.md)
-  - [API Gateway / Routing](api-gateway.md)
+  - [API Gateway / Routing](api_gateway.md)
   - [Configs](configs.md)
 
 - **Security & Observability**

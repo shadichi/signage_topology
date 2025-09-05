@@ -8,24 +8,4 @@
 
 ## 🔗 Services Dependency Diagram
 
-```mermaid
-flowchart TB
-  subgraph App[Flutter TV App]
-    UI[UI / Screens]
-    STATE[State Management - Bloc or Cubit]
-    DOMAIN[Domain - Entities and UseCases]
-    DATA[Data Layer - Repositories]
-    RMT[Remote Sources - HTTP and MQTT]
-    LOC[Local Cache - Files or SharedPrefs]
-  end
-
-  UI --> STATE
-  STATE --> DOMAIN
-  DOMAIN --> DATA
-  DATA --> RMT
-  DATA --> LOC
-
-  RMT --> API[(Backend API)]
-  RMT --> MQTT[(MQTT Broker)]
-  LOC --> FILES[(Video Files Cache)]
-```
+![Services Dependency Diagram](images/Services_Dependency_Diagram.png)
