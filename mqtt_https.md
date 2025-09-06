@@ -16,14 +16,14 @@ https://aparatchi.yektahoosh.com/api/v1
 
 ### Endpoints 
 - **POST /tvscreen/capture**  
-  - هدف: ارسال اسکرین‌شات  
+  - هدف: ارسال اسکرین‌ شات  
   - بادی: `multipart/form-data` شامل:  
     - `screenshot` (png)  
     - `requestID`  
 
 
 - **GET /time**  
-  - هدف: همگام‌سازی زمان دستگاه‌ها  
+  - هدف: همگام‌ سازی زمان دستگاه‌ها  
   - پاسخ: UTC timestamp 
 ---
 
@@ -33,7 +33,7 @@ mqtt://mqtt1.yektahoosh.com:6000
 
 ### Auth
 - اتصال با **Basic Auth** (username/password)
-- فقط دستگاه‌هایی که در پنل ثبت شده‌اند معتبرند
+- فقط دستگاه‌ هایی که در پنل ثبت شده‌اند معتبرند
 
 ### تاپیک‌ها
 | Topic                                | توضیح                          | Payload |

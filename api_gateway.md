@@ -2,22 +2,10 @@
 
 # API Gateway or Routing Design — Digital Signage
 
-## هدف
-این قسمت نحوه ارتباط اپ TV با سرور را توضیح می‌دهد: آدرس ها، هدرها، ثبت دستگاه، MQTT Topic and Message، Routing Design. 
-
----
-
 ## URLs
 
   - mqtt://mqtt1.yektahoosh.com:6000 (for MQTT req)
   - https://aparatchi.yektahoosh.com/api/v1/tvscreen/capture (for sending screenshot of video)
-
----
-
-## هدرها
-- Authorization: Basic Auth (just for MQTT)
-- Content-Type: multipart/form-data
-- Accept: application/json
 
 ---
 

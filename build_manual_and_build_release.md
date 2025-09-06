@@ -3,11 +3,11 @@
 # Build Manual — Digital Signage (Flutter TV)
 
 ## هدف
-راهنمای سریع برای ساخت (Build) اپ Android TV و نصب روی دستگاه ‌ها.
+راهنمای سریع برای بیلد اپ Android TV و نصب روی دستگاه ‌ها.
 
 ---
 
-## پیش‌ نیازها
+## پیش‌ نیاز ها
 - Flutter SDK نصب و روی PATH
 - Android Studio + Android SDK Platform-Tools
 - JDK (ترجیحاً Temurin 17)

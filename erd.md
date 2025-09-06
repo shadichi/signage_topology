@@ -2,7 +2,7 @@
 
 # Database ER Diagram — Digital Signage (Local)
 
-فعلاً ذخیره‌ سازی محلی به‌ صورت Key–Value (SharedPreferences/XML) است.
+در حال حاضر ذخیره‌ سازی محلی به‌ صورت Key–Value (SharedPreferences/XML) است.
 
 ---
 
