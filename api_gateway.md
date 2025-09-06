@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 # API Gateway or Routing Design — Digital Signage
 
 ## هدف
@@ -44,3 +46,5 @@
 
 ## Routing Design
 ![Routing Design](images/Routing_Design.png)
+
+</div>

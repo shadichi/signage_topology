@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 # C3 — Services Architecture Diagram (Signage TV)
 
 ## هدف
@@ -17,6 +19,7 @@
 
 ![Component Map per Feature](images/Component_Map_per_Feature.png)
 
+</div>
 
 
 

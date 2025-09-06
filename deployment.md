@@ -1,9 +1,6 @@
+<div dir="rtl">
+
 # Deployment — Digital Signage
-
-## هدف
-این بخش نحوه‌ی استقرار (Deployment) سیستم Digital Signage را توضیح می‌دهد  
-
----
 
 ## محیط‌ها (Environments)
 1. **Development (Dev)**  
@@ -16,3 +13,5 @@
 3. **Production (Prod)**  
    - همان نسخه‌ای که روی تلویزیون‌ ها نصب میشه.
 اپ Flutter با دستور flutter build apk --release ساخته و مستقیم روی دستگاه نصب میشه.  
+
+</div>

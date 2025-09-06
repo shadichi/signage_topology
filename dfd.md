@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 # Data Flow Diagram — Digital Signage (TV App)
 
 ## هدف
@@ -8,3 +10,5 @@
 ## DFD سطح صفر
 
 ![DFD سطح صفر](images/Zero_level_DFD_2.png)
+
+</div>

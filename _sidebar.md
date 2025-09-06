@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 - [🏠 صفحه اصلی](home.md)
 
 - **C4 Views**
@@ -24,3 +26,5 @@
 
 - **Quality**
   - [Tests Plan](test_plan.md)
+
+</div>

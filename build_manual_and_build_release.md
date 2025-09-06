@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 # Build Manual — Digital Signage (Flutter TV)
 
 ## هدف
@@ -5,13 +7,11 @@
 
 ---
 
-## پیش‌نیازها
+## پیش‌ نیازها
 - Flutter SDK نصب و روی PATH
 - Android Studio + Android SDK Platform-Tools
 - JDK (ترجیحاً Temurin 17)
 - یک دستگاه Android TV یا امولاتور TV
-- فعال بودن USB debugging / ADB روی TV
-
 ---
 
 ## build برای دیباگ (اجرای سریع)
@@ -23,7 +23,5 @@ flutter build apk --release
 ## versioning
 - `version: x.y.z+code` در `pubspec.yaml`
 
-مثال:
-version: 1.2.0+34
 
-
+</div>

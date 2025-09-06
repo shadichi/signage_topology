@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 # Configs (dart-define) — Digital Signage
 
 ## هدف
@@ -13,7 +15,7 @@
 | BASE_URL     | https://aparatchi.yektahoosh.com                         | آدرس Backend API            |
 | CAPTURE_URL  | https://aparatchi.yektahoosh.com/api/v1/tvscreen/capture | آپلود اسکرین‌شات (Multipart)|
 | MQTT_URL     | mqtt://mqtt1.yektahoosh.com:6000                         | بروکر MQTT                  |
-| TOPIC_PREFIX | yektahoosh/ds                                            | پیشوند تاپیک‌ها             |
+| TOPIC_PREFIX | yektahoosh/ds                                            | پیشوند تاپیک‌ ها             |
 
 
 
@@ -46,3 +48,5 @@ flutter build apk --release \
 
 
 ```
+
+</div>

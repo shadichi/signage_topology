@@ -1,9 +1,11 @@
+<div dir="rtl">
+
 # MQTT and HTTPS Agreements — Digital Signage
 
 ## هدف
-توضیح قراردادهای ارتباطی اپ TV با سرور:
-- ارتباط **HTTPS** برای درخواست‌ های HTTP (مثل آپلود اسکرین‌شات).
-- ارتباط **MQTT** برای پیام‌های لحظه‌ای (sync، lock state، splash و …).
+ قراردادهای ارتباطی اپ TV با سرور:
+- ارتباط **HTTPS** برای درخواست‌ های HTTP (مثل آپلود اسکرین‌ شات).
+- ارتباط **MQTT** برای پیام‌های لحظه‌ ای (sync، lock state، splash و …).
 
 ---
 
@@ -11,11 +13,6 @@
 
 ### Base URL
 https://aparatchi.yektahoosh.com/api/v1
-
-### هدرها
-- `Accept: application/json`
-- `Content-Type: application/json` (برای درخواست‌های معمولی)
-- `Content-Type: multipart/form-data` (برای آپلود فایل)
 
 ### Endpoints 
 - **POST /tvscreen/capture**  
@@ -32,15 +29,11 @@ https://aparatchi.yektahoosh.com/api/v1
 
 ## 2. MQTT — قراردادها
 
-### سرور
 mqtt://mqtt1.yektahoosh.com:6000
 
 ### Auth
 - اتصال با **Basic Auth** (username/password)
 - فقط دستگاه‌هایی که در پنل ثبت شده‌اند معتبرند
-
-### Topic Structure
-yektahoosh/ds/<TV_CODE>/<action>
 
 ### تاپیک‌ها
 | Topic                                | توضیح                          | Payload |
@@ -50,5 +43,6 @@ yektahoosh/ds/<TV_CODE>/<action>
 | yektahoosh/ds/<TV_CODE>/sync        | دستور Sync با سرور             | - |
 | yektahoosh/ds/<TV_CODE>/changelockstate | تغییر وضعیت قفل               | String LOCK/UNLOCK |
 | yektahoosh/ds/getlockstate              | درخواست وضعیت قفل             | - |
-| yektahoosh/ds/<TV_CODE>/capture     | دستور گرفتن اسکرین‌شات        | - |
+| yektahoosh/ds/<TV_CODE>/capture     | دستور گرفتن اسکرین‌ شات        | - |
 
+</div>

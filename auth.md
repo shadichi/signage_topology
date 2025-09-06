@@ -1,13 +1,14 @@
 # Authentication / Authorization — Digital Signage
+<div dir="rtl">
 
 ## هدف
 این داکیومنت توضیح می‌دهد چه کسی چطور احراز هویت می‌شود و چه چیزی اجازه دارد انجام دهد. تمرکز ما روی دو هویت است: **ادمین پنل** و **دستگاه TV**.
 
 ---
 
-## هویت‌ها
+## هویت‌ ها
 - **Admin (Panel User):** ورود به پنل مدیریت، تعریف TV و اختصاص Action Group.
-- **Device (TV App):** اپ Flutter نصب‌شده روی تلویزیون. یک «کد/سریال دستگاه» دارد و روی MQTT مشترک می‌شود.
+- **Device (TV App):** اپ Flutter نصب‌شده روی تلویزیون. یک سریال دستگاه دارد و روی MQTT مشترک می‌شود.
 
 ---
 
@@ -26,10 +27,10 @@
      - `yektahoosh/ds/<TV_CODE>/sync`  
      - `yektahoosh/ds/<TV_CODE>/changelockstate`  
      - `yektahoosh/ds/<TV_CODE>/capture`  
-     - (سراسری) `yektahoosh/ds/getlockstate`
+     - `yektahoosh/ds/getlockstate`
 
 4) **اعتبارسنجی سمت سرور:**  
-   سرور فقط به دستگاه‌هایی اجازه مصرف می‌دهد که `TV_CODE` آنها در پنل ثبت شده باشد.
+   سرور فقط به دستگاه‌ هایی اجازه استفاده می‌دهد که `TV_CODE` آنها در پنل ثبت شده باشد.
 
 ---
 
@@ -52,3 +53,5 @@
 
 ### 1) ثبت دستگاه
 ![ثبت دستگاه](images/Device_registration.png)
+
+</div>

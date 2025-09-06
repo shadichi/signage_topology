@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 # Tests Plan — Digital Signage (TV App)
 
 ## وضعیت فعلی
@@ -5,7 +7,7 @@
 
 ---
 
-## انواع تست‌ها
+## انواع تست‌ ها
 
 ### 1) Unit Tests 
 
@@ -26,7 +28,9 @@
 ---
 
 ## اجرا
-- همه تست‌ها:
+- همه تست‌ ها:
 flutter test
 ---
+
+</div>
 

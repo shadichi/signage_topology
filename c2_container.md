@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 # C2 — Services Dependency Diagram (Signage)
 
 ## هدف
@@ -9,3 +11,5 @@
 ## 🔗 Services Dependency Diagram
 
 ![Services Dependency Diagram](images/Services_Dependency_Diagram.png)
+
+</div>
